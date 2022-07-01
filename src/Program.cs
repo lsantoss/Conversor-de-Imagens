@@ -6,7 +6,7 @@ namespace ConversorImagens
     static class Program
     {
         /// <summary>
-        /// Ponto de entrada principal para o aplicativo.
+        /// Main entry point for the app.
         /// </summary>
         [STAThread]
         static void Main()

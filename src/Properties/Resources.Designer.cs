@@ -1,4 +1,4 @@
-﻿namespace ConversorImagens.Properties
+﻿namespace POC.ImageConverter.Application.Properties
 {
     /// <summary>
     ///   A strong type resource class, for searching localized strings etc.
