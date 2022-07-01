@@ -17,7 +17,7 @@ namespace POC.ImageConverter
             buttonConvertImage.Enabled = false;
         }
 
-        private void btnEscolherImagem_Click(object sender, EventArgs e)
+        private void BtnChooseImage_Click(object sender, EventArgs e)
         {
             openFileDialog.CheckFileExists = true;
             openFileDialog.CheckPathExists = true;
@@ -36,67 +36,59 @@ namespace POC.ImageConverter
                 }
                 catch
                 {
-                    MessageBox.Show("Não foi possível obter a imagem", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Could not get the image", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-        private void btnConverterImagem_Click(object sender, EventArgs e)
+        private void BtnConvertImage_Click(object sender, EventArgs e)
         {
-            Image imagemConvertida = pictureBoxChosenImage.Image;
-            saveFileDialog.Filter = FiltroExtensao();
+            saveFileDialog.Filter = GetChosenExtensionToFilter();
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                try
-                {
-                    if (radioJPG.Checked)
-                    {
-                        imagemConvertida.Save(saveFileDialog.FileName, ImageFormat.Jpeg);
-                    }
-                    else if (radioGIF.Checked)
-                    {
-                        imagemConvertida.Save(saveFileDialog.FileName, ImageFormat.Gif);
-                    }
-                    else if (radioPNG.Checked)
-                    {
-                        imagemConvertida.Save(saveFileDialog.FileName, ImageFormat.Png);
-                    }
-                    else if (radioBMP.Checked)
-                    {
-                        imagemConvertida.Save(saveFileDialog.FileName, ImageFormat.Bmp);
-                    }
-                    else if (radioICON.Checked)
-                    {
-                        imagemConvertida.Save(saveFileDialog.FileName, ImageFormat.Icon);
-                    }
-                    else if (radioEXIF.Checked)
-                    {
-                        imagemConvertida.Save(saveFileDialog.FileName, ImageFormat.Exif);
-                    }
-
-                    MessageBox.Show("Conversão realizada com sucesso.", "Sucesso!");
-                }
-                catch
-                {
-                    MessageBox.Show("Não é possivel converter a imagem", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                var fileName = saveFileDialog.FileName;
+                var chosenImage = pictureBoxChosenImage.Image;
+                var chosenImageFormat = GetChosenImageFormat();
+                SaveConvertedImage(fileName, chosenImage, chosenImageFormat);
             }
             else
             {
-                MessageBox.Show("A imagem não é válida", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select an image", "Alert!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        private string FiltroExtensao()
+        private string GetChosenExtensionToFilter()
         {
             if (radioJPG.Checked) return "*.jpg|*.jpg";
-            if (radioGIF.Checked) return "*.gif|*.gif";
-            if (radioPNG.Checked) return "*.png|*.png";
-            if (radioBMP.Checked) return "*.bmp|*.bmp";
-            if (radioICON.Checked) return "*.ico|*.ico";
-            if (radioEXIF.Checked) return "*.exif|*.exif";
-            return string.Empty;
+            else if (radioGIF.Checked) return "*.gif|*.gif";
+            else if (radioPNG.Checked) return "*.png|*.png";
+            else if (radioBMP.Checked) return "*.bmp|*.bmp";
+            else if (radioICON.Checked) return "*.ico|*.ico";
+            else return "*.exif|*.exif";
+        }
+
+        private ImageFormat GetChosenImageFormat()
+        {
+            if (radioJPG.Checked) return ImageFormat.Jpeg;
+            else if (radioGIF.Checked) return ImageFormat.Gif;
+            else if (radioPNG.Checked) return ImageFormat.Png;
+            else if (radioBMP.Checked) return ImageFormat.Bmp;
+            else if (radioICON.Checked) return ImageFormat.Icon;
+            else return ImageFormat.Exif;
+        }
+
+        private void SaveConvertedImage(string fileName, Image chosenImage, ImageFormat chosenImageFormat)
+        {
+            try
+            {
+                chosenImage.Save(fileName, chosenImageFormat);
+                MessageBox.Show("Conversion performed successfully.", "Success!");
+            }
+            catch
+            {
+                MessageBox.Show("Could not convert image", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -82,7 +82,7 @@
             this.buttonConvertImage.TabIndex = 1;
             this.buttonConvertImage.Text = "Convert Image";
             this.buttonConvertImage.UseVisualStyleBackColor = true;
-            this.buttonConvertImage.Click += new System.EventHandler(this.btnConverterImagem_Click);
+            this.buttonConvertImage.Click += new System.EventHandler(this.BtnConvertImage_Click);
             // 
             // groupBoxSecondStep
             // 
@@ -183,7 +183,7 @@
             this.buttonChooseImage.TabIndex = 0;
             this.buttonChooseImage.Text = "Choose Image";
             this.buttonChooseImage.UseVisualStyleBackColor = true;
-            this.buttonChooseImage.Click += new System.EventHandler(this.btnEscolherImagem_Click);
+            this.buttonChooseImage.Click += new System.EventHandler(this.BtnChooseImage_Click);
             // 
             // groupBoxChosenImage
             // 
