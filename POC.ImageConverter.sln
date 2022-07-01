@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31424.327
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversorImagens", "ConversorImagens\ConversorImagens.csproj", "{4E7BC2A9-E8C2-4786-85A6-3D67D108E743}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.ImageConverter.Application", "src\POC.ImageConverter.Application.csproj", "{4E7BC2A9-E8C2-4786-85A6-3D67D108E743}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

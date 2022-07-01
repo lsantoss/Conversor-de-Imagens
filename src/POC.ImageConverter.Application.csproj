@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4E7BC2A9-E8C2-4786-85A6-3D67D108E743}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ConversorImagens</RootNamespace>
-    <AssemblyName>ConversorImagens</AssemblyName>
+    <RootNamespace>POC.ImageConverter.Application</RootNamespace>
+    <AssemblyName>POC.ImageConverter.Application</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
