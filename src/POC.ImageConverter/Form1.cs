@@ -14,7 +14,7 @@ namespace POC.ImageConverter
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            btnConverterImagem.Enabled = false;
+            buttonConvertImage.Enabled = false;
         }
 
         private void btnEscolherImagem_Click(object sender, EventArgs e)
@@ -31,8 +31,8 @@ namespace POC.ImageConverter
             {
                 try
                 {
-                    pictureBox.Image = Image.FromFile(openFileDialog.FileName);
-                    btnConverterImagem.Enabled = true;
+                    pictureBoxChosenImage.Image = Image.FromFile(openFileDialog.FileName);
+                    buttonConvertImage.Enabled = true;
                 }
                 catch
                 {
@@ -43,7 +43,7 @@ namespace POC.ImageConverter
 
         private void btnConverterImagem_Click(object sender, EventArgs e)
         {
-            Image imagemConvertida = pictureBox.Image;
+            Image imagemConvertida = pictureBoxChosenImage.Image;
             saveFileDialog.Filter = FiltroExtensao();
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
