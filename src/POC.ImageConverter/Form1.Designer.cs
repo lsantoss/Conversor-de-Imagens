@@ -1,4 +1,4 @@
-﻿namespace POC.ImageConverter.Application
+﻿namespace POC.ImageConverter
 {
     partial class Form1
     {

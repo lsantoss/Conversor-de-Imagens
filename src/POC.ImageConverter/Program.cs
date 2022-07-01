@@ -1,8 +1,7 @@
-﻿using POC.ImageConverter.Application;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
-namespace ConversorImagens
+namespace POC.ImageConverter
 {
     static class Program
     {
