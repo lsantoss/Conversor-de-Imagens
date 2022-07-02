@@ -32,18 +32,21 @@
             this.groupBoxThirdStep = new System.Windows.Forms.GroupBox();
             this.buttonConvertImage = new System.Windows.Forms.Button();
             this.groupBoxSecondStep = new System.Windows.Forms.GroupBox();
-            this.radioEXIF = new System.Windows.Forms.RadioButton();
-            this.radioICON = new System.Windows.Forms.RadioButton();
-            this.radioGIF = new System.Windows.Forms.RadioButton();
-            this.radioPNG = new System.Windows.Forms.RadioButton();
-            this.radioBMP = new System.Windows.Forms.RadioButton();
-            this.radioJPG = new System.Windows.Forms.RadioButton();
+            this.radioButtonTIFF = new System.Windows.Forms.RadioButton();
+            this.radioButtonEXIF = new System.Windows.Forms.RadioButton();
+            this.radioButtonICON = new System.Windows.Forms.RadioButton();
+            this.radioButtonGIF = new System.Windows.Forms.RadioButton();
+            this.radioButtonPNG = new System.Windows.Forms.RadioButton();
+            this.radioButtonBMP = new System.Windows.Forms.RadioButton();
+            this.radioButtonJPG = new System.Windows.Forms.RadioButton();
             this.groupBoxFirstStep = new System.Windows.Forms.GroupBox();
             this.buttonChooseImage = new System.Windows.Forms.Button();
             this.groupBoxChosenImage = new System.Windows.Forms.GroupBox();
             this.pictureBoxChosenImage = new System.Windows.Forms.PictureBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.radioButtonWMF = new System.Windows.Forms.RadioButton();
+            this.radioButtonEMF = new System.Windows.Forms.RadioButton();
             this.groupBoxConfigurations.SuspendLayout();
             this.groupBoxThirdStep.SuspendLayout();
             this.groupBoxSecondStep.SuspendLayout();
@@ -86,84 +89,98 @@
             // 
             // groupBoxSecondStep
             // 
-            this.groupBoxSecondStep.Controls.Add(this.radioEXIF);
-            this.groupBoxSecondStep.Controls.Add(this.radioICON);
-            this.groupBoxSecondStep.Controls.Add(this.radioGIF);
-            this.groupBoxSecondStep.Controls.Add(this.radioPNG);
-            this.groupBoxSecondStep.Controls.Add(this.radioBMP);
-            this.groupBoxSecondStep.Controls.Add(this.radioJPG);
-            this.groupBoxSecondStep.Location = new System.Drawing.Point(7, 175);
+            this.groupBoxSecondStep.Controls.Add(this.radioButtonEMF);
+            this.groupBoxSecondStep.Controls.Add(this.radioButtonWMF);
+            this.groupBoxSecondStep.Controls.Add(this.radioButtonTIFF);
+            this.groupBoxSecondStep.Controls.Add(this.radioButtonEXIF);
+            this.groupBoxSecondStep.Controls.Add(this.radioButtonICON);
+            this.groupBoxSecondStep.Controls.Add(this.radioButtonGIF);
+            this.groupBoxSecondStep.Controls.Add(this.radioButtonPNG);
+            this.groupBoxSecondStep.Controls.Add(this.radioButtonBMP);
+            this.groupBoxSecondStep.Controls.Add(this.radioButtonJPG);
+            this.groupBoxSecondStep.Location = new System.Drawing.Point(7, 145);
             this.groupBoxSecondStep.Name = "groupBoxSecondStep";
-            this.groupBoxSecondStep.Size = new System.Drawing.Size(235, 176);
+            this.groupBoxSecondStep.Size = new System.Drawing.Size(235, 251);
             this.groupBoxSecondStep.TabIndex = 1;
             this.groupBoxSecondStep.TabStop = false;
             this.groupBoxSecondStep.Text = "Second Step";
             // 
-            // radioEXIF
+            // radioButtonTIFF
             // 
-            this.radioEXIF.AutoSize = true;
-            this.radioEXIF.Location = new System.Drawing.Point(23, 146);
-            this.radioEXIF.Name = "radioEXIF";
-            this.radioEXIF.Size = new System.Drawing.Size(51, 17);
-            this.radioEXIF.TabIndex = 3;
-            this.radioEXIF.TabStop = true;
-            this.radioEXIF.Text = ".EXIF";
-            this.radioEXIF.UseVisualStyleBackColor = true;
+            this.radioButtonTIFF.AutoSize = true;
+            this.radioButtonTIFF.Location = new System.Drawing.Point(23, 146);
+            this.radioButtonTIFF.Name = "radioButtonTIFF";
+            this.radioButtonTIFF.Size = new System.Drawing.Size(49, 17);
+            this.radioButtonTIFF.TabIndex = 9;
+            this.radioButtonTIFF.TabStop = true;
+            this.radioButtonTIFF.Text = ".TiFF";
+            this.radioButtonTIFF.UseVisualStyleBackColor = true;
             // 
-            // radioICON
+            // radioButtonEXIF
             // 
-            this.radioICON.AutoSize = true;
-            this.radioICON.Location = new System.Drawing.Point(23, 100);
-            this.radioICON.Name = "radioICON";
-            this.radioICON.Size = new System.Drawing.Size(54, 17);
-            this.radioICON.TabIndex = 4;
-            this.radioICON.TabStop = true;
-            this.radioICON.Text = ".ICON";
-            this.radioICON.UseVisualStyleBackColor = true;
+            this.radioButtonEXIF.AutoSize = true;
+            this.radioButtonEXIF.Location = new System.Drawing.Point(23, 215);
+            this.radioButtonEXIF.Name = "radioButtonEXIF";
+            this.radioButtonEXIF.Size = new System.Drawing.Size(51, 17);
+            this.radioButtonEXIF.TabIndex = 3;
+            this.radioButtonEXIF.TabStop = true;
+            this.radioButtonEXIF.Text = ".EXIF";
+            this.radioButtonEXIF.UseVisualStyleBackColor = true;
             // 
-            // radioGIF
+            // radioButtonICON
             // 
-            this.radioGIF.AutoSize = true;
-            this.radioGIF.Location = new System.Drawing.Point(23, 123);
-            this.radioGIF.Name = "radioGIF";
-            this.radioGIF.Size = new System.Drawing.Size(45, 17);
-            this.radioGIF.TabIndex = 5;
-            this.radioGIF.TabStop = true;
-            this.radioGIF.Text = ".GIF";
-            this.radioGIF.UseVisualStyleBackColor = true;
+            this.radioButtonICON.AutoSize = true;
+            this.radioButtonICON.Location = new System.Drawing.Point(23, 100);
+            this.radioButtonICON.Name = "radioButtonICON";
+            this.radioButtonICON.Size = new System.Drawing.Size(54, 17);
+            this.radioButtonICON.TabIndex = 4;
+            this.radioButtonICON.TabStop = true;
+            this.radioButtonICON.Text = ".ICON";
+            this.radioButtonICON.UseVisualStyleBackColor = true;
             // 
-            // radioPNG
+            // radioButtonGIF
             // 
-            this.radioPNG.AutoSize = true;
-            this.radioPNG.Location = new System.Drawing.Point(23, 54);
-            this.radioPNG.Name = "radioPNG";
-            this.radioPNG.Size = new System.Drawing.Size(51, 17);
-            this.radioPNG.TabIndex = 6;
-            this.radioPNG.TabStop = true;
-            this.radioPNG.Text = ".PNG";
-            this.radioPNG.UseVisualStyleBackColor = true;
+            this.radioButtonGIF.AutoSize = true;
+            this.radioButtonGIF.Location = new System.Drawing.Point(23, 123);
+            this.radioButtonGIF.Name = "radioButtonGIF";
+            this.radioButtonGIF.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonGIF.TabIndex = 5;
+            this.radioButtonGIF.TabStop = true;
+            this.radioButtonGIF.Text = ".GIF";
+            this.radioButtonGIF.UseVisualStyleBackColor = true;
             // 
-            // radioBMP
+            // radioButtonPNG
             // 
-            this.radioBMP.AutoSize = true;
-            this.radioBMP.Location = new System.Drawing.Point(23, 77);
-            this.radioBMP.Name = "radioBMP";
-            this.radioBMP.Size = new System.Drawing.Size(51, 17);
-            this.radioBMP.TabIndex = 7;
-            this.radioBMP.TabStop = true;
-            this.radioBMP.Text = ".BMP";
-            this.radioBMP.UseVisualStyleBackColor = true;
+            this.radioButtonPNG.AutoSize = true;
+            this.radioButtonPNG.Location = new System.Drawing.Point(23, 54);
+            this.radioButtonPNG.Name = "radioButtonPNG";
+            this.radioButtonPNG.Size = new System.Drawing.Size(51, 17);
+            this.radioButtonPNG.TabIndex = 6;
+            this.radioButtonPNG.TabStop = true;
+            this.radioButtonPNG.Text = ".PNG";
+            this.radioButtonPNG.UseVisualStyleBackColor = true;
             // 
-            // radioJPG
+            // radioButtonBMP
             // 
-            this.radioJPG.AutoSize = true;
-            this.radioJPG.Location = new System.Drawing.Point(23, 31);
-            this.radioJPG.Name = "radioJPG";
-            this.radioJPG.Size = new System.Drawing.Size(48, 17);
-            this.radioJPG.TabIndex = 8;
-            this.radioJPG.TabStop = true;
-            this.radioJPG.Text = ".JPG";
-            this.radioJPG.UseVisualStyleBackColor = true;
+            this.radioButtonBMP.AutoSize = true;
+            this.radioButtonBMP.Location = new System.Drawing.Point(23, 77);
+            this.radioButtonBMP.Name = "radioButtonBMP";
+            this.radioButtonBMP.Size = new System.Drawing.Size(51, 17);
+            this.radioButtonBMP.TabIndex = 7;
+            this.radioButtonBMP.TabStop = true;
+            this.radioButtonBMP.Text = ".BMP";
+            this.radioButtonBMP.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonJPG
+            // 
+            this.radioButtonJPG.AutoSize = true;
+            this.radioButtonJPG.Location = new System.Drawing.Point(23, 31);
+            this.radioButtonJPG.Name = "radioButtonJPG";
+            this.radioButtonJPG.Size = new System.Drawing.Size(48, 17);
+            this.radioButtonJPG.TabIndex = 8;
+            this.radioButtonJPG.TabStop = true;
+            this.radioButtonJPG.Text = ".JPG";
+            this.radioButtonJPG.UseVisualStyleBackColor = true;
             // 
             // groupBoxFirstStep
             // 
@@ -208,6 +225,28 @@
             // 
             this.openFileDialog.FileName = "openFileDialog1";
             // 
+            // radioButtonWMF
+            // 
+            this.radioButtonWMF.AutoSize = true;
+            this.radioButtonWMF.Location = new System.Drawing.Point(23, 169);
+            this.radioButtonWMF.Name = "radioButtonWMF";
+            this.radioButtonWMF.Size = new System.Drawing.Size(54, 17);
+            this.radioButtonWMF.TabIndex = 10;
+            this.radioButtonWMF.TabStop = true;
+            this.radioButtonWMF.Text = ".WMF";
+            this.radioButtonWMF.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonEMF
+            // 
+            this.radioButtonEMF.AutoSize = true;
+            this.radioButtonEMF.Location = new System.Drawing.Point(23, 192);
+            this.radioButtonEMF.Name = "radioButtonEMF";
+            this.radioButtonEMF.Size = new System.Drawing.Size(50, 17);
+            this.radioButtonEMF.TabIndex = 11;
+            this.radioButtonEMF.TabStop = true;
+            this.radioButtonEMF.Text = ".EMF";
+            this.radioButtonEMF.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,15 +278,18 @@
         private System.Windows.Forms.GroupBox groupBoxFirstStep;
         private System.Windows.Forms.Button buttonConvertImage;
         private System.Windows.Forms.Button buttonChooseImage;
-        private System.Windows.Forms.RadioButton radioEXIF;
-        private System.Windows.Forms.RadioButton radioICON;
-        private System.Windows.Forms.RadioButton radioGIF;
-        private System.Windows.Forms.RadioButton radioPNG;
-        private System.Windows.Forms.RadioButton radioBMP;
-        private System.Windows.Forms.RadioButton radioJPG;
+        private System.Windows.Forms.RadioButton radioButtonEXIF;
+        private System.Windows.Forms.RadioButton radioButtonICON;
+        private System.Windows.Forms.RadioButton radioButtonGIF;
+        private System.Windows.Forms.RadioButton radioButtonPNG;
+        private System.Windows.Forms.RadioButton radioButtonBMP;
+        private System.Windows.Forms.RadioButton radioButtonJPG;
         private System.Windows.Forms.GroupBox groupBoxChosenImage;
         private System.Windows.Forms.PictureBox pictureBoxChosenImage;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.RadioButton radioButtonTIFF;
+        private System.Windows.Forms.RadioButton radioButtonWMF;
+        private System.Windows.Forms.RadioButton radioButtonEMF;
     }
 }

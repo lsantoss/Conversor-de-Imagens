@@ -25,7 +25,7 @@ namespace POC.ImageConverter
             openFileDialog.RestoreDirectory = true;
             openFileDialog.ReadOnlyChecked = true;
             openFileDialog.ShowReadOnly = true;
-            openFileDialog.Filter = "*.jpg|*.jpg|*.bmp|*.bmp|*.gif|*.gif|*.png|*.png|*.ico|*.ico";
+            openFileDialog.Filter = "*.jpg|*.jpg|*.png|*.png|*.bmp|*.bmp|*.ico|*.ico|*.gif|*.gif|*.tiff|*.tiff|*.wmf|*.wmf|*.emf|*.emf|*.exif|*.exif";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -60,21 +60,27 @@ namespace POC.ImageConverter
 
         private string GetChosenExtensionToFilter()
         {
-            if (radioJPG.Checked) return "*.jpg|*.jpg";
-            else if (radioGIF.Checked) return "*.gif|*.gif";
-            else if (radioPNG.Checked) return "*.png|*.png";
-            else if (radioBMP.Checked) return "*.bmp|*.bmp";
-            else if (radioICON.Checked) return "*.ico|*.ico";
+            if (radioButtonJPG.Checked) return "*.jpg|*.jpg";
+            else if (radioButtonPNG.Checked) return "*.png|*.png";
+            else if (radioButtonBMP.Checked) return "*.bmp|*.bmp";
+            else if (radioButtonICON.Checked) return "*.ico|*.ico";
+            else if (radioButtonGIF.Checked) return "*.gif|*.gif";
+            else if (radioButtonTIFF.Checked) return "*.tiff|*.tiff";
+            else if (radioButtonWMF.Checked) return "*.wmf|*.wmf";
+            else if (radioButtonEMF.Checked) return "*.emf|*.emf";
             else return "*.exif|*.exif";
         }
 
         private ImageFormat GetChosenImageFormat()
         {
-            if (radioJPG.Checked) return ImageFormat.Jpeg;
-            else if (radioGIF.Checked) return ImageFormat.Gif;
-            else if (radioPNG.Checked) return ImageFormat.Png;
-            else if (radioBMP.Checked) return ImageFormat.Bmp;
-            else if (radioICON.Checked) return ImageFormat.Icon;
+            if (radioButtonJPG.Checked) return ImageFormat.Jpeg;
+            else if (radioButtonPNG.Checked) return ImageFormat.Png;
+            else if (radioButtonBMP.Checked) return ImageFormat.Bmp;
+            else if (radioButtonICON.Checked) return ImageFormat.Icon;
+            else if (radioButtonGIF.Checked) return ImageFormat.Gif;
+            else if (radioButtonTIFF.Checked) return ImageFormat.Tiff;
+            else if (radioButtonWMF.Checked) return ImageFormat.Wmf;
+            else if (radioButtonEMF.Checked) return ImageFormat.Emf;
             else return ImageFormat.Exif;
         }
 
