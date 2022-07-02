@@ -1,8 +1,11 @@
-# Conversor de Imagens
+# POC.ImageConverter
 
-<h3>Aplicação:</h3>
-<p>Essa aplicação contém um exemplo conversor de imagens para as principais extensões</p>
+## Application:
+This application contains an example of an image converter for the main extensions.
 
-<h3>Detalhes:</h3>
-<p>Tipo de projeto: Windows Forms</p>
-<p>Banco de Dados: Não</p>
+> Built in Windows Forms.
+
+---
+
+## Frameworks:
+- .Net Framework 4.8
