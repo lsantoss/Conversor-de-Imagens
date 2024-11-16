@@ -1,11 +1,11 @@
 # POC.ImageConverter
 
 ## Application:
+
 This application contains an example of an image converter for the main extensions.
 
-> Built in Windows Forms.
+Type: Windows Forms.
 
----
+## Framework:
 
-## Frameworks:
 - .Net Framework 4.8

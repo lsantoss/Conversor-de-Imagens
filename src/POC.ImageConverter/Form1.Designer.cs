@@ -32,6 +32,8 @@
             this.groupBoxThirdStep = new System.Windows.Forms.GroupBox();
             this.buttonConvertImage = new System.Windows.Forms.Button();
             this.groupBoxSecondStep = new System.Windows.Forms.GroupBox();
+            this.radioButtonEMF = new System.Windows.Forms.RadioButton();
+            this.radioButtonWMF = new System.Windows.Forms.RadioButton();
             this.radioButtonTIFF = new System.Windows.Forms.RadioButton();
             this.radioButtonEXIF = new System.Windows.Forms.RadioButton();
             this.radioButtonICON = new System.Windows.Forms.RadioButton();
@@ -45,8 +47,6 @@
             this.pictureBoxChosenImage = new System.Windows.Forms.PictureBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.radioButtonWMF = new System.Windows.Forms.RadioButton();
-            this.radioButtonEMF = new System.Windows.Forms.RadioButton();
             this.groupBoxConfigurations.SuspendLayout();
             this.groupBoxThirdStep.SuspendLayout();
             this.groupBoxSecondStep.SuspendLayout();
@@ -105,6 +105,30 @@
             this.groupBoxSecondStep.TabStop = false;
             this.groupBoxSecondStep.Text = "Second Step";
             // 
+            // radioButtonEMF
+            // 
+            this.radioButtonEMF.AutoSize = true;
+            this.radioButtonEMF.Location = new System.Drawing.Point(23, 192);
+            this.radioButtonEMF.Name = "radioButtonEMF";
+            this.radioButtonEMF.Size = new System.Drawing.Size(50, 17);
+            this.radioButtonEMF.TabIndex = 11;
+            this.radioButtonEMF.TabStop = true;
+            this.radioButtonEMF.Text = ".EMF";
+            this.radioButtonEMF.UseVisualStyleBackColor = true;
+            this.radioButtonEMF.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckedChanged);
+            // 
+            // radioButtonWMF
+            // 
+            this.radioButtonWMF.AutoSize = true;
+            this.radioButtonWMF.Location = new System.Drawing.Point(23, 169);
+            this.radioButtonWMF.Name = "radioButtonWMF";
+            this.radioButtonWMF.Size = new System.Drawing.Size(54, 17);
+            this.radioButtonWMF.TabIndex = 10;
+            this.radioButtonWMF.TabStop = true;
+            this.radioButtonWMF.Text = ".WMF";
+            this.radioButtonWMF.UseVisualStyleBackColor = true;
+            this.radioButtonWMF.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckedChanged);
+            // 
             // radioButtonTIFF
             // 
             this.radioButtonTIFF.AutoSize = true;
@@ -115,6 +139,7 @@
             this.radioButtonTIFF.TabStop = true;
             this.radioButtonTIFF.Text = ".TiFF";
             this.radioButtonTIFF.UseVisualStyleBackColor = true;
+            this.radioButtonTIFF.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckedChanged);
             // 
             // radioButtonEXIF
             // 
@@ -126,6 +151,7 @@
             this.radioButtonEXIF.TabStop = true;
             this.radioButtonEXIF.Text = ".EXIF";
             this.radioButtonEXIF.UseVisualStyleBackColor = true;
+            this.radioButtonEXIF.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckedChanged);
             // 
             // radioButtonICON
             // 
@@ -137,6 +163,7 @@
             this.radioButtonICON.TabStop = true;
             this.radioButtonICON.Text = ".ICON";
             this.radioButtonICON.UseVisualStyleBackColor = true;
+            this.radioButtonICON.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckedChanged);
             // 
             // radioButtonGIF
             // 
@@ -148,6 +175,7 @@
             this.radioButtonGIF.TabStop = true;
             this.radioButtonGIF.Text = ".GIF";
             this.radioButtonGIF.UseVisualStyleBackColor = true;
+            this.radioButtonGIF.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckedChanged);
             // 
             // radioButtonPNG
             // 
@@ -159,6 +187,7 @@
             this.radioButtonPNG.TabStop = true;
             this.radioButtonPNG.Text = ".PNG";
             this.radioButtonPNG.UseVisualStyleBackColor = true;
+            this.radioButtonPNG.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckedChanged);
             // 
             // radioButtonBMP
             // 
@@ -170,6 +199,7 @@
             this.radioButtonBMP.TabStop = true;
             this.radioButtonBMP.Text = ".BMP";
             this.radioButtonBMP.UseVisualStyleBackColor = true;
+            this.radioButtonBMP.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckedChanged);
             // 
             // radioButtonJPG
             // 
@@ -181,6 +211,7 @@
             this.radioButtonJPG.TabStop = true;
             this.radioButtonJPG.Text = ".JPG";
             this.radioButtonJPG.UseVisualStyleBackColor = true;
+            this.radioButtonJPG.CheckedChanged += new System.EventHandler(this.RadioButtons_CheckedChanged);
             // 
             // groupBoxFirstStep
             // 
@@ -224,28 +255,6 @@
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog1";
-            // 
-            // radioButtonWMF
-            // 
-            this.radioButtonWMF.AutoSize = true;
-            this.radioButtonWMF.Location = new System.Drawing.Point(23, 169);
-            this.radioButtonWMF.Name = "radioButtonWMF";
-            this.radioButtonWMF.Size = new System.Drawing.Size(54, 17);
-            this.radioButtonWMF.TabIndex = 10;
-            this.radioButtonWMF.TabStop = true;
-            this.radioButtonWMF.Text = ".WMF";
-            this.radioButtonWMF.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonEMF
-            // 
-            this.radioButtonEMF.AutoSize = true;
-            this.radioButtonEMF.Location = new System.Drawing.Point(23, 192);
-            this.radioButtonEMF.Name = "radioButtonEMF";
-            this.radioButtonEMF.Size = new System.Drawing.Size(50, 17);
-            this.radioButtonEMF.TabIndex = 11;
-            this.radioButtonEMF.TabStop = true;
-            this.radioButtonEMF.Text = ".EMF";
-            this.radioButtonEMF.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

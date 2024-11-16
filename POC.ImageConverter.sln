@@ -5,6 +5,15 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.ImageConverter", "src\POC.ImageConverter\POC.ImageConverter.csproj", "{4E7BC2A9-E8C2-4786-85A6-3D67D108E743}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "#solution-items", "#solution-items", "{C901E5F0-C063-45DA-94E2-9BAC5C21CDAE}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{189C53D3-11EF-4D4F-8429-A29C8C7295CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +27,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E7BC2A9-E8C2-4786-85A6-3D67D108E743} = {189C53D3-11EF-4D4F-8429-A29C8C7295CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D317EB1A-CFAB-4E5C-8A06-EB5974562CBC}
