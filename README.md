@@ -9,3 +9,7 @@ Type: Windows Forms.
 ## Framework:
 
 - .Net Framework 4.8
+
+## Dependencies:
+
+- N/A
